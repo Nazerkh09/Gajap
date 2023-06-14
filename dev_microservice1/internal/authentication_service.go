@@ -10,7 +10,7 @@ type authenticationService struct {
 }
 
 // NewAuthenticationService creates a new instance of the authentication service.
-func NewAuthenticationService() pb.RegisterAuthenticationServiceServer {
+func NewAuthenticationService() pb.AuthenticationServiceServer {
 	return &authenticationService{}
 }
 
