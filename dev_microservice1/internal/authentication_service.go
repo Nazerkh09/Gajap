@@ -3,14 +3,14 @@ package internal
 import (
 	"context"
 
-	pb "github.com/Nazerkh09/gajap/dev_microservice1/proto"
+	pb "github.com/Nazerkh09/gajap/dev_microservice1/protobuf"
 )
 
 type authenticationService struct {
 }
 
 // NewAuthenticationService creates a new instance of the authentication service.
-func NewAuthenticationService() pb.AuthenticationServiceServer {
+func NewAuthenticationService() pb.RegisterAuthenticationServiceServer {
 	return &authenticationService{}
 }
 
