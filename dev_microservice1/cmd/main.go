@@ -8,7 +8,7 @@ import (
 	"syscall"
 
 	"github.com/Nazerkh09/gajap/dev_microservice1/internal"
-	pb "github.com/Nazerkh09/gajap/dev_microservice1/protobuf"
+	pb "github.com/Nazerkh09/gajap/dev_microservice1/internal/protobuf"
 	"github.com/streadway/amqp"
 	"google.golang.org/grpc"
 )

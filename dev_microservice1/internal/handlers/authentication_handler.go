@@ -5,13 +5,14 @@ import (
 	"log"
 	"net/http"
 
-	pb "github.com/Nazerkh09/gajap/dev_microservice1/protobuf"
+	pb "github.com/Nazerkh09/gajap/dev_microservice1/internal/protobuf"
 )
 
 type AuthenticationHandler struct {
 	authClient pb.AuthenticationClient
 }
 
+// .
 func NewAuthenticationHandler(authClient pb.AuthenticationClient) *AuthenticationHandler {
 	return &AuthenticationHandler{
 		authClient: authClient,
