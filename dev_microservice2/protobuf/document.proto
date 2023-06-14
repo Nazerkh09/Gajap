@@ -1,0 +1,46 @@
+// File: dev_microservice2/protobuf/document.proto
+
+syntax = "proto3";
+
+package document;
+
+option go_package= "/";
+
+service DocumentService {
+  rpc CreateDocument(CreateDocumentRequest) returns (CreateDocumentResponse);
+  rpc GetDocument(GetDocumentRequest) returns (GetDocumentResponse);
+  rpc UpdateDocument(UpdateDocumentRequest) returns (UpdateDocumentResponse);
+  rpc DeleteDocument(DeleteDocumentRequest) returns (DeleteDocumentResponse);
+}
+
+message CreateDocumentRequest {
+  // Define request message fields here
+}
+
+message CreateDocumentResponse {
+  // Define response message fields here
+}
+
+message GetDocumentRequest {
+  // Define request message fields here
+}
+
+message GetDocumentResponse {
+  // Define response message fields here
+}
+
+message UpdateDocumentRequest {
+  // Define request message fields here
+}
+
+message UpdateDocumentResponse {
+  // Define response message fields here
+}
+
+message DeleteDocumentRequest {
+  // Define request message fields here
+}
+
+message DeleteDocumentResponse {
+  // Define response message fields here
+}
