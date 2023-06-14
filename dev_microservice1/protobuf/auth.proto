@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package protobuf;
+package authservice;
 
 option go_package = "/dev_microservice1/protobuf/";
 

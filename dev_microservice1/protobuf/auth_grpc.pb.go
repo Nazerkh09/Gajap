@@ -19,10 +19,10 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	AuthService_RegisterUser_FullMethodName       = "/protobuf.AuthService/RegisterUser"
-	AuthService_Login_FullMethodName              = "/protobuf.AuthService/Login"
-	AuthService_ValidateToken_FullMethodName      = "/protobuf.AuthService/ValidateToken"
-	AuthService_GetUserPermissions_FullMethodName = "/protobuf.AuthService/GetUserPermissions"
+	AuthService_RegisterUser_FullMethodName       = "/authservice.AuthService/RegisterUser"
+	AuthService_Login_FullMethodName              = "/authservice.AuthService/Login"
+	AuthService_ValidateToken_FullMethodName      = "/authservice.AuthService/ValidateToken"
+	AuthService_GetUserPermissions_FullMethodName = "/authservice.AuthService/GetUserPermissions"
 )
 
 // AuthServiceClient is the client API for AuthService service.
@@ -195,7 +195,7 @@ func _AuthService_GetUserPermissions_Handler(srv interface{}, ctx context.Contex
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var AuthService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "protobuf.AuthService",
+	ServiceName: "authservice.AuthService",
 	HandlerType: (*AuthServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -220,9 +220,9 @@ var AuthService_ServiceDesc = grpc.ServiceDesc{
 }
 
 const (
-	UserManagementService_CreateUser_FullMethodName = "/protobuf.UserManagementService/CreateUser"
-	UserManagementService_UpdateUser_FullMethodName = "/protobuf.UserManagementService/UpdateUser"
-	UserManagementService_DeleteUser_FullMethodName = "/protobuf.UserManagementService/DeleteUser"
+	UserManagementService_CreateUser_FullMethodName = "/authservice.UserManagementService/CreateUser"
+	UserManagementService_UpdateUser_FullMethodName = "/authservice.UserManagementService/UpdateUser"
+	UserManagementService_DeleteUser_FullMethodName = "/authservice.UserManagementService/DeleteUser"
 )
 
 // UserManagementServiceClient is the client API for UserManagementService service.
@@ -363,7 +363,7 @@ func _UserManagementService_DeleteUser_Handler(srv interface{}, ctx context.Cont
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var UserManagementService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "protobuf.UserManagementService",
+	ServiceName: "authservice.UserManagementService",
 	HandlerType: (*UserManagementServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
