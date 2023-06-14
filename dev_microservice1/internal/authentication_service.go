@@ -3,7 +3,7 @@ package internal
 import (
 	"context"
 
-	pb "github.com/Nazerkh09/gajap/dev_microservice1/protobuf"
+	pb "github.com/Nazerkh09/gajap/dev_microservice1/proto"
 )
 
 type authenticationService struct {

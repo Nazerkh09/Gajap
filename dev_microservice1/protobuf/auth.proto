@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package auth;
 
-option go_package= "/dev_microservice1/internal/protobuf";
+option go_package= "/";
 
-service AuthenticationService {
+service AuthenticationService  {
   rpc Login(LoginRequest) returns (LoginResponse) {}
   rpc Register(RegisterRequest) returns (RegisterResponse) {}
 }
